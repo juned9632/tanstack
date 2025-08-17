@@ -44,7 +44,7 @@ export const WelcomeScreen = ({
       <div className="flex items-center justify-center flex-1 px-4">
         <div className="w-full max-w-md mx-auto text-center">
           <h1 className="mb-4 text-4xl font-bold text-transparent uppercase bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text">
-            <span className="text-white">TanStack</span> Chat
+            <span className="text-white">Abxy</span> Chat
           </h1>
           <div className="mb-4">
             <button
@@ -95,7 +95,7 @@ export const WelcomeScreen = ({
     <div className="flex items-center justify-center flex-1 px-4">
       <div className="w-full max-w-3xl mx-auto text-center">
         <h1 className="mb-4 text-6xl font-bold text-transparent uppercase bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text">
-          <span className="text-white">TanStack</span> Chat
+          <span className="text-white">Abxy</span> Chat
         </h1>
         <p className="w-2/3 mx-auto mb-6 text-lg text-gray-400">
           Welcome, {user.email}! You can ask me about anything.
