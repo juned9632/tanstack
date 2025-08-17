@@ -3,10 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+  "dev": "react-start dev",
+  "build": "react-start build",
+  "start": "react-start start"
+},
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
     "@nhost/nhost-js": "^3.3.0",
