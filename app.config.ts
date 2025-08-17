@@ -1,20 +1,12 @@
-import { defineConfig } from '@tanstack/react-start'
+// app.config.ts
+// ⚡ Modern TanStack Router projects with Vite don’t require this file.
+// You can keep it for convention or delete it safely.
 
-import viteTsConfigPaths from 'vite-tsconfig-paths'
-
-export default defineConfig({
+export default {
   tsr: {
-    appDirectory: 'src',
+    appDirectory: "src", // where your routes/components live
   },
   server: {
-    preset: 'netlify',
+    preset: "netlify", // deployment target (optional)
   },
-  vite: {
-    plugins: [
-      // this is the plugin that enables path aliases
-      viteTsConfigPaths({
-        projects: ['./tsconfig.json'],
-      }),
-    ],
-  },
-})
+};
