@@ -25,11 +25,12 @@ export const WelcomeScreen = ({
     e.preventDefault();
     setError('');
     try {
-      const res = await fetch(`/api/${authMode}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password }),
-      });
+      const res = await fetch(`/.netlify/functions/${authMode}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, password }),
+    });
+
       const data = await res.json();
       if (data.user) setUser(data.user);
       else setError(data.error || 'Auth failed');
