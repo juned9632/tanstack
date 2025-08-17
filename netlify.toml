@@ -2,4 +2,5 @@
 NODE_VERSION = "20" 
 [build]
   command = "npm run build"
-  publish = ".react/start/client" # instead of dist
+  publish = "dist"
+  functions = "netlify/functions"
